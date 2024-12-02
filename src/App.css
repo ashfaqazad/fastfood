@@ -1,0 +1,60 @@
+/* Custom Dark Theme */
+:root {
+  --bs-body-bg: #4b4848;
+  --bs-body-color: #e0e0e0;
+  --bs-link-color: #1e90ff;
+}
+
+body {
+  background-color: var(--bs-body-bg);
+  color: var(--bs-body-color);
+}
+
+a {
+  color: var(--bs-link-color);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .table thead {
+    display: none;
+  }
+  
+  .table, .table tbody, .table tr, .table td {
+    display: block;
+    width: 100%;
+  }
+
+  .table tr {
+    margin-bottom: 1rem;
+  }
+
+  .table td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  .table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
+}
+
+
+
+
+
+/* 
+.carousel-item img {
+  opacity: 0.5; /* Yahan par opacity value set karein */
+  /* transition: opacity 0.3s ease-in-out; Smooth transition ke liye */
+/* } */ 
+
